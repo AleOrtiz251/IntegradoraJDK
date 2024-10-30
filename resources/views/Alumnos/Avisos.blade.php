@@ -43,7 +43,7 @@
             color: white;
             border: 2px solid #072146;
             padding: 1rem 1rem;
-            border-radius: 5px;
+            border-radius: 10px;
             text-decoration: none;
             cursor: pointer;
         }
@@ -122,6 +122,10 @@
         
         #container-fluid{
             background-color: #072146;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+             margin: 0;
         }
         
     </style>
@@ -158,10 +162,11 @@
 
     <div class="container bg-secondary">
         <div class="row">
-            <table class="table table-bordered">
+            <table class="table table-bordered" >
                 <tr class="table-dark">
-                    <th>Nombre</th>
-                    <th>Mensaje</th>
+                    <th class = "col-2">Nombre</th>
+                    <th class="col-8">Mensaje</th>
+                    <th class = "col-4">Fecha</th>
                 </tr>
             </table>
         </div>

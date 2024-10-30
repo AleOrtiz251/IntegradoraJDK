@@ -15,5 +15,12 @@ Route::get('/admin', function () {
 });
 
 Route :: get('/alumno/avisos', function () {
-    return view('Alumno.avisos');
+    return view('Alumnos.Avisos');
+});
+Route :: get('/alumno/grupos', function () {
+    return view('Alumnos.Grupos');
+});
+
+Route :: get('/alumno/finanzas', function () {
+    return view('Alumnos.Finanzas');
 });
