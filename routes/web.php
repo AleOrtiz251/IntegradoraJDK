@@ -13,3 +13,7 @@ Route::get('/login', function () {
 Route::get('/admin', function () {
     return view('InicioAdmin');
 });
+
+Route :: get('/alumno/avisos', function () {
+    return view('Alumno.avisos');
+});
