@@ -17,3 +17,7 @@ Route::get('/admin', function () {
 Route :: get('/alumno/avisos', function () {
     return view('Alumno.avisos');
 });
+
+Route :: get('/formulrio', function () {
+    return view('form');
+});
