@@ -123,7 +123,7 @@
                 </div>
                 <div class="col-4 d-flex justify-content-end align-items-center" id="contenedorBotom">
                     <a href="#" class="btn-customCon">Conócenos</a>
-                    <a href="#" class="btn-customAcc">Acceso</a>
+                    <a href="../login" class="btn-customAcc">Acceso</a>
                 </div>
             </div>
         </div>
