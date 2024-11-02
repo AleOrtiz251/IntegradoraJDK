@@ -38,25 +38,7 @@
             justify-content: space-between;
             align-items: center;
         }
-        .btn-customCon {
-            background-color: #072146;
-            color: white;
-            border: 2px solid #072146;
-            padding: 2rem 2rem;
-            border-radius: 10px;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .btn-customCon:active {
-            color:  #0E2A52;
-            box-shadow: 0 0.2rem #dfd9d9;
-            transform: translateY(0.2rem);
-        }
-        .btn-customCon:hover:not(:disabled) {
-            background:  #0E2A52;
-            color: white;
-            text-shadow: 0 0.1rem #bcb4b4;
-        }
+        
         .btn-customAcc {
             background-color: #0E2A52;
             color: white;
@@ -122,8 +104,7 @@
                     <img src="{{ asset('images/MonosBlanco.png') }}" alt="" class="personajesNav">
                 </div>
                 <div class="col-4 d-flex justify-content-end align-items-center" id="contenedorBotom">
-                    <a href="#" class="btn-customCon">Conócenos</a>
-                    <a href="#" class="btn-customAcc">Acceso</a>
+                    <a href="../login" class="btn-customAcc">Acceso</a>
                 </div>
             </div>
         </div>

@@ -21,6 +21,9 @@ Route :: get('/alumno/grupos', function () {
     return view('Alumnos.Grupos');
 });
 
+Route :: get('/formulrio', function () {
+    return view('form');
+});
 Route :: get('/alumno/finanzas', function () {
     return view('Alumnos.Finanzas');
 });
