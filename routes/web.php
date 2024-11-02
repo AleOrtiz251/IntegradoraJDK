@@ -1,16 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JidokwanController;
+use App\Models\Custom_user;
 
-Route::get('/', function () {
-    return view('inicio');
-});
+Route::get('/',[JidokwanController::class,'vistaprincipal']);
 
-Route::get('/login', function () {
-    return view('InicioSesion');
-});
+Route::get('/login',[JidokwanController::class,'getlogin']);
 
-Route::get('/admin', function () {
+Route::get('/cexamen',[JidokwanController::class,'crearexamen']);
+
+Route::get('/cclase',[JidokwanController::class,'crearclase']);
+
+/*Route::get('/admin', function () {
     return view('Admin/InicioAdmin');
 });
 
@@ -20,4 +22,5 @@ Route :: get('/alumno/avisos', function () {
 
 Route :: get('/formulrio', function () {
     return view('form');
-});
+});*/
+
