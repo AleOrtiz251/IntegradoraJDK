@@ -22,6 +22,6 @@ class AlumnoController extends Controller
     }
     public function progresos()
     {
-        return view('Alumnos/Progresos');
+        return view('Alumnos/Progreso');
     }
 }
