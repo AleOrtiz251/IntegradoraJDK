@@ -118,6 +118,8 @@
             </div>
         </div>
     </nav>
+
+
     <div class="background-div">
         <div class="inner-container">
             <h2>Notificaciones</h2>
@@ -159,6 +161,8 @@
             </div>
         </div>
     </div>
+
+    
     <footer class="text-center">
         <div class="container-fluid">
             <div class="row">
