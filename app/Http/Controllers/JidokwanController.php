@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use APP\Models\CustomUser;
+use App\Models\CustomUser;
 use App\Http\Controllers\Controller;
 
 class JidokwanController extends Controller
@@ -13,7 +13,8 @@ class JidokwanController extends Controller
     }
 
     public function getlogin(){
-        // $User = CustomUser::all();
+        $User=null;
+         $User = CustomUser::all();
         return view('InicioSesion');
     }
 
