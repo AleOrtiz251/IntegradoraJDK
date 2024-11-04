@@ -52,7 +52,7 @@
             height: 100%;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: end;
 
         }
         .table {
@@ -124,9 +124,9 @@
         <div class="table">
             <table class="table table-bordered">
                 <tr class="table-dark">
-                    <th class = "col-2">Profesor</th>
-                    <th class = "col-8">Mensaje</th>
-                    <th class = "col-2">Fecha</th>
+                    <th>Cantidad a pagar</th>
+                    <th>Estado</th>
+                    <th>Fecha de vencimiento</th>
                 </tr>
             </table>
         </div>
