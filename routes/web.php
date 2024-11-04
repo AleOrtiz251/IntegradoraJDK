@@ -14,4 +14,7 @@ Route::get('/cexamen',[JidokwanController::class,'crearexamen']);
 
 Route::get('/cclase',[JidokwanController::class,'crearclase']);
 
-
+Route :: get('/alumno/progresos', [AlumnoController:: class , 'progresos']);
+Route :: get('/alumno/avisos', [AlumnoController:: class , 'avisos']);
+Route :: get('/alumno/grupos', [AlumnoController:: class , 'grupos']);
+Route :: get('/alumno/finanzas', [AlumnoController:: class , 'finanzas']);
