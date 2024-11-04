@@ -44,8 +44,25 @@
             height: 28px;
             margin-right: 5px;
         }
+        
         .navbar-toggler {
-            background-color: white;
+            background-color: #eaeaff;
+            color: white;
+            border: 2px solid #072146;
+            padding: 1rem 1rem;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .navbar-toggler:active {
+            color: white;
+            box-shadow: 0 0.2rem #dfd9d9;
+            transform: translateY(0.2rem);
+        }
+        .navbar-toggler:hover:not(:disabled) {
+            background: white;
+            color: #072146;
+            text-shadow: 0 0.1rem #bcb4b4;
         }
         .background-div {
             width: 100%;

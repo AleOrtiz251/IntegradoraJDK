@@ -22,3 +22,4 @@ class CreateMaterialsTable extends Migration
         Schema::dropIfExists('materials');
     }
 }
+
