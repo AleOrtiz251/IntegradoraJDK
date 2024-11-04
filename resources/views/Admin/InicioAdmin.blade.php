@@ -9,61 +9,65 @@
         html, body {
             height: 100%;
         }
+
         body {
             display: flex;
             flex-direction: column;
         }
+
         .content {
             flex: 1;
         }
+
         footer, .navbar {
             background-color: #072146;
             padding: 1rem 0;
         }
+
         .container-fluid {
             background-color: #072146;
         }
+
         .img-logoNav {
             width: 90px;
             height: 90px;
             margin-left: 30px;
         }
+
         .header-text {
             color: white;
             margin: 0 20px;
         }
+
         .footer-logo {
             width: 60px;
             height: 60px;
         }
+
         .footer-link {
             color: white;
         }
+
         .imgFace {
             width: 28px;
             height: 28px;
             margin-right: 5px;
         }
-        
+
         .navbar-toggler {
             background-color: #eaeaff;
             color: white;
             border: 2px solid #072146;
-            padding: 1rem 1rem;
+            padding: 5px 10px;
             border-radius: 10px;
-            text-decoration: none;
             cursor: pointer;
         }
-        .navbar-toggler:active {
-            color: white;
-            box-shadow: 0 0.2rem #dfd9d9;
-            transform: translateY(0.2rem);
-        }
+
         .navbar-toggler:hover:not(:disabled) {
             background: white;
             color: #072146;
-            text-shadow: 0 0.1rem #bcb4b4;
         }
+
         .background-div {
             width: 100%;
             height: 100%;
@@ -75,6 +79,7 @@
             justify-content: center;
             align-items: center;
         }
+
         .inner-container {
             background: rgba(255, 255, 255, 0.8);
             padding: 0.5rem;
@@ -86,21 +91,24 @@
             justify-content: center;
             align-items: center;
         }
+
         .card {
             width: 18rem;
             height: 18rem;
             margin: 1rem;
         }
-        .offcanvas{
+
+        .offcanvas {
             background-color: rgba(0, 0, 0, 0.5);
         }
-        
     </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="{{ asset('images/JDKJulietasLogoBlanco.png') }}" alt="" class="img-logoNav"></a>
+            <a class="navbar-brand" href="#">
+                <img src="{{ asset('images/JDKJulietasLogoBlanco.png') }}" alt="" class="img-logoNav">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -112,18 +120,18 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"style="color: white">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#" style="color: white">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"style="color: white">Link</a>
+                            <a class="nav-link" href="#" style="color: white">Link</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="color: white">Dropdown</a>
-                            <ul class="dropdown-menu" >
-                                <li><a class="dropdown-item" href="#"style="color: white">Action</a></li>
-                                <li><a class="dropdown-item" href="#"style="color: white">Another action</a></li>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" style="color: white">Action</a></li>
+                                <li><a class="dropdown-item" href="#" style="color: white">Another action</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#"style="color: white">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#" style="color: white">Something else here</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -135,15 +143,13 @@
             </div>
         </div>
     </nav>
-
-
     <div class="background-div">
         <div class="inner-container">
             <h2>Notificaciones</h2>
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="card w-100 p-0 5">
+                        <div class="card w-100">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -151,7 +157,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card w-100 p-0 5">
+                        <div class="card w-100">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -159,7 +165,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card w-100 p-0 5">
+                        <div class="card w-100">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -178,8 +184,6 @@
             </div>
         </div>
     </div>
-
-    
     <footer class="text-center">
         <div class="container-fluid">
             <div class="row">
@@ -191,7 +195,10 @@
                     <img src="{{ asset('images/JDKJulietasLogoBlanco.png') }}" alt="" class="footer-logo">
                 </div>
                 <div class="col-4 d-flex align-items-center justify-content-center footer-contact">
-                    <p><img src="{{ asset('images/facebookIcon.png') }}" alt="" class="imgFace"> <a href="https://www.facebook.com/JidoKwanGymJulietas" class="footer-link">Jido Kwan Gym Julietas</a></p>
+                    <p>
+                        <img src="{{ asset('images/facebookIcon.png') }}" alt="" class="imgFace">
+                        <a href="https://www.facebook.com/JidoKwanGymJulietas" class="footer-link">Jido Kwan Gym Julietas</a>
+                    </p>
                 </div>
             </div>
         </div>
