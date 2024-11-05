@@ -55,7 +55,7 @@
         }
 
         .navbar-toggler {
-            background-color: #eaeaff;
+            background-color: #a6d0ff;
             color: white;
             border: 2px solid #072146;
             padding: 5px 10px;
@@ -64,7 +64,7 @@
         }
 
         .navbar-toggler:hover:not(:disabled) {
-            background: white;
+            background: #f99e76;
             color: #072146;
         }
 
